@@ -10,10 +10,10 @@ url: https://hig4342.github.io/  # url should be 'http://<github_username>.githu
 img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
-author:  # change following line to your infomation.
-  name: HwangIngyu  # Be used at blog posts' author.
-  first_name: Hwang  # Be used at index page about me section.
-  last_name: Ingyu  # Be used at index page about me section.
+author: 황인규 # change following line to your infomation.
+  name: 황인규
+  first_name: 황
+  last_name: 인규
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
   github_username: hig4342  # Leave blank if you don't have now
   linkedin_id: # Leave blank if you don't have now
