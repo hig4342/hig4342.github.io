@@ -9,8 +9,6 @@ tags: [Algorithm,Search,Liner,Binary]
 icon: icon-brain
 ---
 
-# 탐색 알고리즘 - 순차 탐색(Liner Search) VS 이진 탐색(Binary Search)
-
 ## 탐색 알고리즘이란?
 
 ## 순차 탐색(Liner Search)
