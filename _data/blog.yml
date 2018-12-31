@@ -5,21 +5,18 @@
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
 - name: C++
   href: /c++/
-  
+
 - name: Python
   href: /python/
 
 - name: Linux
   href: /linux/
 
-- name: HTML
-  href: /html/
+- name: Algorithm
+  href: /algorithm/
 
 - name: Database
   href: /database/
-
-- name: Mac
-  href: /mac/
 
 - name: Life
   href: /life/
