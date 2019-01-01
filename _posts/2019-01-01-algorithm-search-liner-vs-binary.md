@@ -10,11 +10,11 @@ icon: fa-cogs
 ---
 
 
-## 탐색 알고리즘이란?
+# 탐색 알고리즘이란?
 컴퓨터 과학[^1] 에서 탐색 알고리즘은 다양한 데이터 구조에서 특정한 값이나 위치를 찾는 알고리즘이다.
-## 순차 탐색(Liner Search)
+# 순차 탐색(Liner Search)
 a
-## 이진 탐색(Binary Search)
+# 이진 탐색(Binary Search)
 # Jalpc. [![Analytics](https://ga-beacon.appspot.com/UA-73784599-1/welcome-page)](https://github.com/jarrekk/Jalpc)
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
