@@ -35,10 +35,10 @@ permalink: /blog/
                     </div>
                     <div class="col-md-2 ">
                         <div class="vote-icon">
-                            {% if post.icon %}
-                            {% assign category = post.url | split: '/'%}
+                        {% if post.icon %}
+                        {% assign category = post.url | split: '/'%}
                             <a href="{{ category[1] | prepend: '/' | prepend: site.baseurl }}" style="color:#e8e9ea"><i class="fa {{ post.icon }}"></i></a>
-                            {% endif %}
+                        {% endif %}
                         </div>
                     </div>
                 </div>
