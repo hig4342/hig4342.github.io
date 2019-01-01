@@ -27,6 +27,8 @@ permalink: /blog/
                             테스트12
                             {% assign category = post.url | split: '/'%}
                             {{ category[1] | prepend: '/' | prepend: site.baseurl  }}
+                            ㅋ
+                            {{ category[1] | prepend: '/'}}
                         </a>
                         <div class="vote-info">
                         {% if site.disqus %}
