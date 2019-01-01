@@ -24,9 +24,9 @@ permalink: /blog/
                         </div>
                         <a href="{{ post.url | prepend: site.baseurl }}" class="vote-title">
                             {{ post.title }}
-                            테스트
-                            {% assign category = page.url | remove:'/' | capitalize %}
-                            {{ category }}
+                            테스트12
+                            {% assign category = post.url | split: '/'%}
+                            {{ category[1] | prepend: '/' | prepend: site.baseurl  }}
                         </a>
                         <div class="vote-info">
                         {% if site.disqus %}
@@ -39,6 +39,7 @@ permalink: /blog/
                     <div class="col-md-2 ">
                         <div class="vote-icon">
                             {% if post.icon %}
+                            {% assign category = post.url | split: '/'%}
                             <a href="{{ post.url | }}"><i class="fa {{ post.icon }}"></i></a>
                             {% endif %}
                         </div>
