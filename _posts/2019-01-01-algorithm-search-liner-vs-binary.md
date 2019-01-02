@@ -13,6 +13,7 @@ icon: fa-cogs
 2. [순차 탐색(Liner Search)](#순차-탐색liner-search)
 3. [이진 탐색(Binary Search)](#이진-탐색binary-search)
 4. [순차 탐색과 이진 탐색의 차이점](#순차-탐색과-이진-탐색의-차이점)
+
 ***
 
 ## 탐색 알고리즘이란?
