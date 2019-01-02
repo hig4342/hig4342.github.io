@@ -9,7 +9,10 @@ tags: [Algorithm,Search,Liner,Binary]
 icon: fa-cogs
 ---
 
-[toc]
+1. [탐색 알고리즘이란?](#탐색-알고리즘이란)
+2. [순차 탐색(Liner Search)](#순차-탐색liner-search)
+3. [이진 탐색(Binary Search)](#이진-탐색binary-search)
+4. [순차 탐색과 이진 탐색의 차이점](#순차-탐색과-이진-탐색의-차이점)
 
 ## 탐색 알고리즘이란?
 컴퓨터 과학[^1] 에서 탐색 알고리즘은 다양한 데이터 구조에서 특정한 값의 유무나 위치를 찾는 알고리즘이다.
@@ -45,14 +48,7 @@ Binary_Search(Arr[0,...,N-1], value, low, high){
 ```
 
 ## 순차 탐색과 이진 탐색의 차이점
-순차 탐색은 리스트에서 찾고싶은 값을 시작부터 끝까지 찾으므로 O(n)의 시간복잡도를 가지고 이진 탐색은 O(log n)
-$$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
-\end{vmatrix}
-$$
+순차 탐색은 리스트에서 찾고싶은 값을 시작부터 끝까지 찾으므로 $$$O(n)$$$의 시간복잡도를 가지고, 이진 탐색은 $$$O(log n)$$$의 시
 
 [^1]: 전산 이론, 하드웨어 및 소프트웨어에 중점을 둔 정보과학의 한 분야이다.
 [^2]: Pseudocode, 프로그램을 작성하기 전에 알고리즘의 과정을 나타내어 특정 언어로 작성한게 아닌 코드를 흉내 내어 짜여진 코드이다. 위 본문에선 C 스타일의 의사코드를 작성했다.
