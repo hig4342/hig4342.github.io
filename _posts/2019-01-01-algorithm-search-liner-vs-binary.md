@@ -33,9 +33,6 @@ LinerSearch(Arr[0..N-1], value, begin, end){
 
 다음은 순차 탐색의 의사코드[^2]이다.
 ```c
-/*
-  Condition : 0 < begin <= end <= N
-*/
 BinarySearch(Arr[0..N-1], value, low, high){
   If (high <= low) return -1; // Not Found
   mid = (low + high) / 2
