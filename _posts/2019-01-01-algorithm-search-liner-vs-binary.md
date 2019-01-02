@@ -35,20 +35,6 @@ Liner_Search(Arr[0,...,N-1], value, begin, end){
 }
 ```
 
-## 이진 탐색(Binary Search)
-이진 탐색은 정렬된 리스트의 중앙 값을 선택하여 그 값이 찾는 값과의 크고 작음을 비교하며 찾는 방법이다. 중앙 값이 찾는 값보다 크면 중앙 값이 최대값이 되고, 중앙 값이 찾는 값보다 작으면 중앙 값이 최소값이 된다.
-
-다음은 이진 탐색의 의사 코드이다.
-```c
-Binary_Search(Arr[0,...,N-1], value, low, high){
-  if (high <= low) return -1; // Not Found
-  mid = (low + high) / 2
-  if (Arr[mid] > value) return Binary_Search(Arr, value, low, mid-1)
-  else if (Arr[mid] < value) return Binary_Search(Arr, value, mid+1, high)
-  else return mid // if(Arr[mid] == value) Return Location
-}
-```
-
 표를 보며 알고리즘을 이해해보자.
 다음과 같은 배열에서 5를 찾기 위해선
 
@@ -86,6 +72,19 @@ Binary_Search(Arr[0,...,N-1], value, low, high){
 |:-:|:-:|:-:|:-:|:-:|:-:|:--:|:-:|:-:|:-:|
 |   |   |   |   | X |   |    |   |   |   |
 
+## 이진 탐색(Binary Search)
+이진 탐색은 정렬된 리스트의 중앙 값을 선택하여 그 값이 찾는 값과의 크고 작음을 비교하며 찾는 방법이다. 중앙 값이 찾는 값보다 크면 중앙 값이 최대값이 되고, 중앙 값이 찾는 값보다 작으면 중앙 값이 최소값이 된다.
+
+다음은 이진 탐색의 의사 코드이다.
+```c
+Binary_Search(Arr[0,...,N-1], value, low, high){
+  if (high <= low) return -1; // Not Found
+  mid = (low + high) / 2
+  if (Arr[mid] > value) return Binary_Search(Arr, value, low, mid-1)
+  else if (Arr[mid] < value) return Binary_Search(Arr, value, mid+1, high)
+  else return mid // if(Arr[mid] == value) Return Location
+}
+```
 
 ## 순차 탐색과 이진 탐색의 차이점
 순차 탐색은 리스트에서 찾고싶은 값을 시작부터 끝까지 찾으므로 $$O(n)$$의 시간복잡도를 가지고, 이진 탐색은 값을 찾아야하는 리스트가 절반씩 줄어들기 때문에 $$O(logn)$$의 시간 복잡도를 가진다.  
