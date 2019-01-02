@@ -41,6 +41,16 @@ h3, h4, h5 {
   font-weight: 600;
 }
 
+table {
+  border-collapse: collapse;
+}
+table, thead, td {
+  border: 1px solid black;
+}
+thead, td {
+  padding: 5px;
+}
+
 .nav {
   > li > a {
     color: #a7b1c2;
@@ -1279,16 +1289,6 @@ a {
   h1, h2, h3, h4, h5 {
     margin-top: 5px;
   }
-}
-
-table {
-  border-collapse: collapse;
-}
-table, th, td {
-  border: 1px solid black;
-}
-th, td {
-padding: 5px;
 }
 
 .ibox-title {
