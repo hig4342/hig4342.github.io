@@ -9,9 +9,10 @@ tags: [Algorithm,Search,Liner,Binary]
 icon: fa-cogs
 ---
 
-- [탐색 알고리즘이란?](#탐색-알고리즘이란)
-- [순차 탐색(Liner Search)](#순차-탐색liner-search)
-- [이진 탐색(Binary Search)](#이진-탐색binary-search)
+1. [탐색 알고리즘이란?](#탐색-알고리즘이란)
+2. [순차 탐색(Liner Search)](#순차-탐색liner-search)
+3. [이진 탐색(Binary Search)](#이진-탐색binary-search)
+4. [순차 탐색과 이진 탐색의 차이점](#순차-탐색과-이진-탐색의-차이점)
 
 ## 탐색 알고리즘이란?
 컴퓨터 과학[^1] 에서 탐색 알고리즘은 다양한 데이터 구조에서 특정한 값의 유무나 위치를 찾는 알고리즘이다.
