@@ -1,5 +1,4 @@
 var count_kor = ["영", "첫", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"];
-var post_kor = ["이", "이", "가", "이", "가", "가", "이", "이", "이", "가", "이"];
 var arr = [1,2,3,4,5,6,7,8,9,10];
 var i = 1;
 var liner_table = document.getElementsByTagName("table")[0];
