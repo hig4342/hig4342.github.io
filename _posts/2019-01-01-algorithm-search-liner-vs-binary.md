@@ -37,7 +37,8 @@ Liner_Search(Arr[0,...,N-1], value, begin, end){
 
 표를 보며 알고리즘을 이해해보자.
 다음과 같은 배열에서 5를 찾기 위해선
-<button>버튼 테스트</button>
+<input type="text" id="liner_number" onchange="liner_num(this)" value="5">
+<button onclick="liner_search(this)">찾기</button>
 
 | arr[0] | arr[1] | arr[2] | arr[3] | arr[4] | arr[5] | arr[6] | arr[7] | arr[8] | arr[9] |
 |:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
