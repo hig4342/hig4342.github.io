@@ -5,8 +5,7 @@ var i = 1;
 var liner_table = document.getElementsByTagName("table")[0];
 var liner_val = document.getElementById("liner_number").value;
 
-shuffle(arr);
-for(var j=0; j<10; j++) table_loc(liner_table, 1, j+1).innerHTML = arr[j];
+liner_reset();
 
 function liner_search(id){
   if(i<=10){
