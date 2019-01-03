@@ -38,7 +38,7 @@ Liner_Search(Arr[0,...,N-1], value, begin, end){
 
 다음 표를 보며 알고리즘을 이해해보자.
 
-<input class="quantity" id="liner_number" onchange="liner_num(this)" value="5" type="number">
+<div class="quantity"><input id="liner_number" onchange="liner_num(this)" value="1" step="1" type="number"></div>
 <button onclick="liner_search(this)" id="liner_step" style="width: 115px;">찾기</button>
 <button onclick="liner_reset()">초기화</button>
 
@@ -71,3 +71,4 @@ Binary_Search(Arr[0,...,N-1], value, low, high){
 *[의사 코드]: Pseudo code, 프로그램을 작성하기 전에 알고리즘의 과정을 나타내어 특정 언어로 작성한게 아닌 코드를 흉내 내어 짜여진 코드이다. 위 본문에선 C 스타일의 의사코드를 작성했다.
 
 <script src="{{"/static/js/liner_vs_binary.js"| prepend: site.baseurl }}"></script>
+<script src="{{"/static/js/quantity.js"| prepend: site.baseurl }}"></script>
