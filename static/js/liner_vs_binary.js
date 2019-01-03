@@ -33,7 +33,7 @@ function liner_reset(){
   shuffle(arr);
   for(var j=0; j<10; j++) table_loc(liner_table, 1, j+1).innerHTML = arr[j];
   liner_step.innerHTML = "찾기";
-  liner_state.innerHTML = "123";
+  liner_state.innerHTML = "반환값 :";
   table_loc(liner_table, 2, 1).innerHTML = "now";
   table_loc(liner_table, 2, 1).style.color = "#676a6c";
   for(i=2; i<=10; i++){
