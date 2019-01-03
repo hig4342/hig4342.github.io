@@ -9,7 +9,6 @@ tags: [Algorithm,Search,Liner,Binary]
 icon: fa-cogs
 
 ---
-
 ***
 1. [탐색 알고리즘이란?](#탐색-알고리즘이란)
 2. [순차 탐색(Liner Search)](#순차-탐색liner-search)
