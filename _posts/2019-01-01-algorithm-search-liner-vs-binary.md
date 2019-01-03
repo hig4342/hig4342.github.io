@@ -10,7 +10,7 @@ icon: fa-cogs
 
 ---
 
-<script src="hig4342.github.io/static/js/liner_vs_binary.js"></script>
+<script src="{{"/static/js/liner_vs_binary.js"| prepend: site.baseurl }}"></script>
 
 ***
 1. [탐색 알고리즘이란?](#탐색-알고리즘이란)
