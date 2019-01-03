@@ -38,7 +38,7 @@ Liner_Search(Arr[0,...,N-1], value, begin, end){
 
 다음 표를 보며 알고리즘을 이해해보자.
 
-<input type="text" id="liner_number" onchange="liner_num(this)" value="5">
+<input class="quantity" id="liner_number" onchange="liner_num(this)" value="5" type="number">
 <button onclick="liner_search(this)" id="liner_step" style="width: 115px;">찾기</button>
 <button onclick="liner_reset()">초기화</button>
 
