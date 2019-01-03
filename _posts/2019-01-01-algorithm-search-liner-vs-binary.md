@@ -10,8 +10,6 @@ icon: fa-cogs
 
 ---
 
-<script src="{{"/static/js/liner_vs_binary.js"| prepend: site.baseurl }}"></script>
-
 ***
 1. [탐색 알고리즘이란?](#탐색-알고리즘이란)
 2. [순차 탐색(Liner Search)](#순차-탐색liner-search)
@@ -72,3 +70,5 @@ Binary_Search(Arr[0,...,N-1], value, low, high){
 
 *[컴퓨터 과학]: 전산 이론, 하드웨어 및 소프트웨어에 중점을 둔 정보과학의 한 분야이다.
 *[의사 코드]: Pseudo code, 프로그램을 작성하기 전에 알고리즘의 과정을 나타내어 특정 언어로 작성한게 아닌 코드를 흉내 내어 짜여진 코드이다. 위 본문에선 C 스타일의 의사코드를 작성했다.
+
+<script src="{{"/static/js/liner_vs_binary.js"| prepend: site.baseurl }}"></script>
