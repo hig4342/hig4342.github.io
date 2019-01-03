@@ -14,9 +14,9 @@ function liner_search(id){
       table_loc(liner_table, 2, i).innerHTML = "O";
       table_loc(liner_table, 2, i).style.color = "#0000dd";
       liner_state.innerHTML = "반환값 : " + (i-1);
-      i=11;
     }
     else{
+      if(i==10) liner_state.innerHTML = "반환값 : -1";
       table_loc(liner_table, 2, i).innerHTML = "X";
       table_loc(liner_table, 2, i).style.color = "#dd0000";
       table_loc(liner_table, 2, i+1).innerHTML = "now";
