@@ -7,7 +7,11 @@ keywords: "Algorithm,Search,Liner,Binary,hig4342,Blog,순차탐색,이진탐색"
 categories: [Algorithm]
 tags: [Algorithm,Search,Liner,Binary]
 icon: fa-cogs
+
 ---
+
+<script src="hig4342.github.io/static/js/liner_vs_binary.js"></script>
+
 ***
 1. [탐색 알고리즘이란?](#탐색-알고리즘이란)
 2. [순차 탐색(Liner Search)](#순차-탐색liner-search)
