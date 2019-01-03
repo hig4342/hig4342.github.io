@@ -36,7 +36,7 @@ Liner_Search(Arr[0,...,N-1], value, begin, end){
 }
 ```
 
-표를 보며 알고리즘을 이해해보자.
+다음 표를 보며 알고리즘을 이해해보자.
 
 <input type="text" id="liner_number" onchange="liner_num(this)" value="5">
 <button onclick="liner_search(this)" id="liner_step" style="width: 115px;">찾기</button>
