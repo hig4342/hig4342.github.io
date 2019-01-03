@@ -14,13 +14,12 @@ function liner_search(id){
     if(now_text == liner_val){
       table_loc(liner_table, 2, i).innerHTML = "O";
       table_loc(liner_table, 2, i).style.color = "#0000dd";
-      //document.getElementById("state").innerHTML = "arr[" + (i-1) + "]에 " + liner_val + post_kor[liner_val] + " 있습니다.";
+      liner_state.innerHTML += (i-1);
       i=11;
     }
     else{
       table_loc(liner_table, 2, i).innerHTML = "X";
       table_loc(liner_table, 2, i).style.color = "#dd0000";
-      //document.getElementById("state").innerHTML = "arr[" + (i-1) + "]에 " + liner_val + post_kor[liner_val] + " 없습니다.";
       table_loc(liner_table, 2, i+1).innerHTML = "now";
       i++;
     }
@@ -35,6 +34,7 @@ function liner_reset(){
   shuffle(arr);
   for(var j=0; j<10; j++) table_loc(liner_table, 1, j+1).innerHTML = arr[j];
   liner_step.innerHTML = "찾기";
+  liner_state.innerHTML = "반환값 : ";
   table_loc(liner_table, 2, 1).innerHTML = "now";
   table_loc(liner_table, 2, 1).style.color = "#676a6c";
   for(i=2; i<=10; i++){
