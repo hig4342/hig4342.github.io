@@ -52,20 +52,26 @@ th:nth-child(even), td:nth-child(even){
   background-color: #e3e3e3;
 }
 
-th{
+table, td{
   border-right: 1px solid #d0d0d0;
-  border-bottom: 2px solid #ff0000;
+}
+
+td:nth-child(1){
+  border-right: 2px solid #000000;
+}
+
+th:nth-child(n+2){
+  border-bottom: 2px solid #000000;
+}
+
+th{
   padding-top: 3px;
   padding-right: 5px;
   padding-left: 5px;
   padding-bottom: 3px;
 }
 
-table, td{
-  border-right: 1px solid #d0d0d0;
-}
-
-thead, td {
+th, td {
   padding: 5px;
 }
 
