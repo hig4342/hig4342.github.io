@@ -18,7 +18,7 @@ function liner_search(id){
       liner_state.innerHTML = "반환값 : " + (liner_loc-1);
     }
     else{
-      if(i==10) liner_state.innerHTML = "반환값 : -1";
+      if(liner_loc==10) liner_state.innerHTML = "반환값 : -1";
       table_loc(liner_table, 2, liner_loc).innerHTML = "X";
       table_loc(liner_table, 2, liner_loc).style.color = "#dd0000";
       table_loc(liner_table, 2, liner_loc+1).innerHTML = "now";
