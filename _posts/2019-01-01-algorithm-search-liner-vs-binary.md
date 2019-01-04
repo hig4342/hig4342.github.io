@@ -36,7 +36,7 @@ Liner_Search(Arr[0,...,N-1], value, begin, end){
 }
 ```
 
-다음 표의 진행과정을 보며 알고리즘을 이해해보자.
+다음 표의 진행과정을 보며 순차 탐색을 이해해보자.
 
 <div class="quantity"><input id="liner_number" onchange="liner_num(this)" value="1" step="1" type="number"></div>
 <button onclick="liner_search(this)" id="liner_step" style="width: 115px;">찾기</button>
@@ -62,6 +62,19 @@ Binary_Search(Arr[0,...,N-1], value, low, high){
   else return mid // if(Arr[mid] == value) Return Location
 }
 ```
+
+다음 표의 진행과정을 보며 이진 탐색을 이해해보자.
+
+<div class="quantity"><input id="binary_number" onchange="binary_num(this)" value="1" step="1" type="number"></div>
+<button onclick="binary_search(this)" id="binary_step" style="width: 115px;">찾기</button>
+<button onclick="binary_reset()">초기화</button>
+
+|       | arr[0] | arr[1] | arr[2] | arr[3] | arr[4] | arr[5] | arr[6] | arr[7] | arr[8] | arr[9] |
+|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| value |    1   |    2   |    3   |    4   |    5   |    6   |   7    |    8   |    9   |   10   |
+| state |   now  |        |        |        |        |        |        |        |        |        |
+
+<p id="liner_state">반환값 : </p>
 
 ## 순차 탐색과 이진 탐색의 차이점
 순차 탐색은 리스트에서 찾고싶은 값을 시작부터 끝까지 찾으므로 $$O(n)$$의 시간복잡도를 가지고, 이진 탐색은 값을 찾아야하는 리스트가 절반씩 줄어들기 때문에 $$O(logn)$$의 시간 복잡도를 가진다.  
