@@ -22,7 +22,7 @@ function liner_search(id){
       table_loc(liner_table, 2, liner_loc).innerHTML = "X";
       table_loc(liner_table, 2, liner_loc).style.color = "#dd0000";
       table_loc(liner_table, 2, liner_loc+1).innerHTML = "now";
-      i++;
+      liner_loc++;
     }
   }
 }
