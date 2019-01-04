@@ -47,7 +47,7 @@ Liner_Search(Arr[0,...,N-1], value, begin, end){
 | value |    1   |    2   |    3   |    4   |    5   |    6   |   7    |    8   |    9   |   10   |
 | state |   now  |        |        |        |        |        |        |        |        |        |
 
-<p id="liner_state">반환값 : </p>
+<p id="liner_return">반환값 : </p>
 
 ## 이진 탐색(Binary Search)
 이진 탐색은 정렬된 리스트의 중앙 값을 선택하여 그 값이 찾는 값과의 크고 작음을 비교하며 찾는 방법이다. 중앙 값이 찾는 값보다 크면 중앙 값이 최대값이 되고, 중앙 값이 찾는 값보다 작으면 중앙 값이 최소값이 된다.
@@ -74,7 +74,7 @@ Binary_Search(Arr[0,...,N-1], value, low, high){
 | value |    1   |    2   |    3   |    4   |    5   |    6   |   7    |    8   |    9   |   10   |
 | state |   low  |        |        |        |   mid  |        |        |        |        |  high  |
 
-<p id="binary_state">반환값 : </p>
+<p id="binary_return">반환값 : </p>
 
 ## 순차 탐색과 이진 탐색의 차이점
 순차 탐색은 리스트에서 찾고싶은 값을 시작부터 끝까지 찾으므로 $$O(n)$$의 시간복잡도를 가진다.  
