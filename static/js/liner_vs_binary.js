@@ -29,7 +29,10 @@ function liner_search(id){
 
 function binary_search(id){
   if(high <= low){
-    binary_state.innerHTML = "반환값 : " + (i-1);
+    binary_state.innerHTML = "반환값 : " + (mid-1);
+  }
+  else{
+    mid = (low + high) /2;
   }
 }
 
