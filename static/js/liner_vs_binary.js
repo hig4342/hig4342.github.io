@@ -87,6 +87,7 @@ function binary_reset(){
   }
   low = 1;
   high = 10;
+  binary_count = 0;
   binary_state();
 }
 
