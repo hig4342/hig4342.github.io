@@ -1,27 +1,35 @@
 var count_kor = ["영", "첫", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"];
 var arr = [1,2,3,4,5,6,7,8,9,10];
-var i = 1;
+var liner_loc = 1;
+var low = 0;
+var high = 9;
 var liner_table = document.getElementsByTagName("table")[0];
 var liner_val = document.getElementById("liner_number").value;
-
-liner_reset();
+var binary_table = document.getElementsByTagName("table")[1];
+var binary_val = document.getElementById("binary_number").value;
 
 function liner_search(id){
-  if(i<=10){
-    id.innerHTML = count_kor[i] + "번째 단계";
-    var now_text = table_loc(liner_table, 1, i).innerHTML;
+  if(liner_loc<=10){
+    id.innerHTML = count_kor[liner_loc] + "번째 단계";
+    var now_text = table_loc(liner_table, 1, liner_loc).innerHTML;
     if(now_text == liner_val){
-      table_loc(liner_table, 2, i).innerHTML = "O";
-      table_loc(liner_table, 2, i).style.color = "#0000dd";
-      liner_state.innerHTML = "반환값 : " + (i-1);
+      table_loc(liner_table, 2, liner_loc).innerHTML = "O";
+      table_loc(liner_table, 2, liner_loc).style.color = "#0000dd";
+      liner_state.innerHTML = "반환값 : " + (liner_loc-1);
     }
     else{
       if(i==10) liner_state.innerHTML = "반환값 : -1";
-      table_loc(liner_table, 2, i).innerHTML = "X";
-      table_loc(liner_table, 2, i).style.color = "#dd0000";
-      table_loc(liner_table, 2, i+1).innerHTML = "now";
+      table_loc(liner_table, 2, liner_loc).innerHTML = "X";
+      table_loc(liner_table, 2, liner_loc).style.color = "#dd0000";
+      table_loc(liner_table, 2, liner_loc+1).innerHTML = "now";
       i++;
     }
+  }
+}
+
+function binary_search(id){
+  if(high <= low){
+    binary_state.innerHTML = "반환값 : " + (i-1);
   }
 }
 
@@ -31,25 +39,26 @@ function liner_num(val){
 
 function liner_reset(){
   shuffle(arr);
-  for(var j=0; j<10; j++) table_loc(liner_table, 1, j+1).innerHTML = arr[j];
+  for(var i=0; i<10; i++) table_loc(liner_table, 1, i+1).innerHTML = arr[i];
   liner_step.innerHTML = "찾기";
   liner_state.innerHTML = "반환값 :";
-  for(i=1; i<=10; i++){
+  for(var i=1; i<=10; i++){
     table_loc(liner_table, 2, i).innerHTML = "";
     table_loc(liner_table, 2, i).style.color = "#676a6c";
   }
   table_loc(liner_table, 2, 1).innerHTML = "now";
-  i=1;
+  liner_loc=1;
 }
 
 function binary_reset(){
-  liner_step.innerHTML = "찾기";
-  liner_state.innerHTML = "반환값 :";
-  for(i=1; i<=10; i++){
-    table_loc(liner_table, 2, i).innerHTML = "";
-    table_loc(liner_table, 2, i).style.color = "#676a6c";
+  binary_step.innerHTML = "찾기";
+  binary_state.innerHTML = "반환값 :";
+  for(var i=1; i<=10; i++){
+    table_loc(binary_table, 2, i).innerHTML = "";
+    table_loc(binary_table, 2, i).style.color = "#676a6c";
   }
-  i=1;
+  low = 1;
+  high = 9;
 }
 
 function table_loc(table, rowN, colN){//row = 행, col = 열
