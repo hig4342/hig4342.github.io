@@ -1,8 +1,8 @@
 var count_kor = ["영", "첫", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"];
 var arr = [1,2,3,4,5,6,7,8,9,10];
 var liner_loc = 1;
-var low = 0;
-var high = 9;
+var low = 1;
+var high = 10;
 var liner_table = document.getElementsByTagName("table")[0];
 var liner_val = document.getElementById("liner_number").value;
 var binary_table = document.getElementsByTagName("table")[1];
@@ -32,8 +32,14 @@ function binary_search(id){
   }
   else{
     mid = (low + high) /2;
-    var mid_val = table_loc(liner_table, 1, liner_loc).innerHTML;
-    if()
+    var mid_val = table_loc(liner_table, 1, mid+1).innerHTML;
+    if(mid_val > binary_val){
+      binary_subreset();
+
+    }
+    else if(mid_val < binary_val){
+
+    }
   }
 }
 
@@ -63,6 +69,10 @@ function binary_reset(){
   }
   low = 1;
   high = 9;
+}
+
+function binary_state(l, h){
+  for(var i=1; i<=10; i++) table_loc(binary_table, 2, i).innerHTML = "";
 }
 
 function table_loc(table, rowN, colN){//row = 행, col = 열
