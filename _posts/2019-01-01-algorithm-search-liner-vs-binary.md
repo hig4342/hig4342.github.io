@@ -74,7 +74,7 @@ Binary_Search(Arr[0,...,N-1], value, low, high){
 | value |    1   |    2   |    3   |    4   |    5   |    6   |   7    |    8   |    9   |   10   |
 | state |   low  |        |        |        |   mid  |        |        |        |        |  high  |
 
-<p id="liner_state">반환값 : </p>
+<p id="binary_state">반환값 : </p>
 
 ## 순차 탐색과 이진 탐색의 차이점
 순차 탐색은 리스트에서 찾고싶은 값을 시작부터 끝까지 찾으므로 $$O(n)$$의 시간복잡도를 가진다.  
