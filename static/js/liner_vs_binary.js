@@ -11,8 +11,8 @@ var binary_val = document.getElementById("binary_number").value;
 function liner_search(id){
   if(liner_loc<=10){
     id.innerHTML = count_kor[liner_loc] + "번째 단계";
-    var now_text = table_loc(liner_table, 1, liner_loc).innerHTML;
-    if(now_text == liner_val){
+    var now_val = table_loc(liner_table, 1, liner_loc).innerHTML;
+    if(now_val == liner_val){
       table_loc(liner_table, 2, liner_loc).innerHTML = "O";
       table_loc(liner_table, 2, liner_loc).style.color = "#0000dd";
       liner_state.innerHTML = "반환값 : " + (liner_loc-1);
@@ -29,10 +29,11 @@ function liner_search(id){
 
 function binary_search(id){
   if(high <= low){
-    binary_state.innerHTML = "반환값 : " + (mid-1);
   }
   else{
     mid = (low + high) /2;
+    var mid_val = table_loc(liner_table, 1, liner_loc).innerHTML;
+    if()
   }
 }
 
