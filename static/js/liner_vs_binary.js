@@ -28,23 +28,38 @@ function liner_search(id){
 }
 
 function binary_search(id){
-  if(high <= low){
+  if(high < low){
+    binary_return.innerHTML = "반환값 : -1";
   }
   else{
-    mid = (low + high) /2;
-    var mid_val = table_loc(liner_table, 1, mid+1).innerHTML;
-    if(mid_val > binary_val){
-      binary_subreset();
-
+    var mid = parseInt((low + high) /2);
+    var mid_val = table_loc(binary_table, 1, mid).innerHTML;
+    if(Number(mid_val) > Number(binary_val)){
+      table_loc(binary_table, 2, high).innerHTML = "";
+      table_loc(binary_table, 2, mid).innerHTML = "<-";
+      table_loc(binary_table, 2, mid).style.color = "#dd0000";
+      high = mid-1;
+      if(high>0)binary_state();
     }
-    else if(mid_val < binary_val){
-
+    else if(Number(mid_val) < Number(binary_val)){
+      table_loc(binary_table, 2, low).innerHTML = "";
+      table_loc(binary_table, 2, mid).innerHTML = "->";
+      table_loc(binary_table, 2, mid).style.color = "#dd0000";
+	  low = mid+1;
+      binary_state();
+    }
+    else{
+      binary_return.innerHTML = "반환값 : " + (mid - 1);
+      table_loc(binary_table, 2, mid).style.color = "#0000dd";
     }
   }
 }
 
 function liner_num(val){
   liner_val = document.getElementById("liner_number").value;
+}
+function binary_num(val){
+  binary_val = document.getElementById("binary_number").value;
 }
 
 function liner_reset(){
@@ -62,17 +77,21 @@ function liner_reset(){
 
 function binary_reset(){
   binary_step.innerHTML = "찾기";
-  binary_state.innerHTML = "반환값 :";
+  binary_return.innerHTML = "반환값 :";
   for(var i=1; i<=10; i++){
     table_loc(binary_table, 2, i).innerHTML = "";
     table_loc(binary_table, 2, i).style.color = "#676a6c";
   }
   low = 1;
-  high = 9;
+  high = 10;
+  binary_state();
 }
 
-function binary_state(l, h){
-  for(var i=1; i<=10; i++) table_loc(binary_table, 2, i).innerHTML = "";
+function binary_state(){
+  var mid = parseInt((low + high) /2);
+  table_loc(binary_table, 2, low).innerHTML = "low";
+  table_loc(binary_table, 2, high).innerHTML = "high";
+  table_loc(binary_table, 2, mid).innerHTML = "mid";
 }
 
 function table_loc(table, rowN, colN){//row = 행, col = 열
