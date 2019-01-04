@@ -7,6 +7,7 @@ var liner_table = document.getElementsByTagName("table")[0];
 var liner_val = document.getElementById("liner_number").value;
 var binary_table = document.getElementsByTagName("table")[1];
 var binary_val = document.getElementById("binary_number").value;
+var binary_count = 0;
 
 function liner_search(id){
   if(liner_loc<=10){
@@ -34,6 +35,8 @@ function binary_search(id){
   else{
     var mid = parseInt((low + high) /2);
     var mid_val = table_loc(binary_table, 1, mid).innerHTML;
+    if(binary_return.innerHTML == "반환값 : ") binary_count++;
+    id.innerHTML = count_kor[binary_count] + "번째 단계";
     if(Number(mid_val) > Number(binary_val)){
       table_loc(binary_table, 2, high).innerHTML = "";
       table_loc(binary_table, 2, mid).innerHTML = "<-";
@@ -66,7 +69,7 @@ function liner_reset(){
   shuffle(arr);
   for(var i=0; i<10; i++) table_loc(liner_table, 1, i+1).innerHTML = arr[i];
   liner_step.innerHTML = "찾기";
-  liner_state.innerHTML = "반환값 :";
+  liner_state.innerHTML = "반환값 : ";
   for(var i=1; i<=10; i++){
     table_loc(liner_table, 2, i).innerHTML = "";
     table_loc(liner_table, 2, i).style.color = "#676a6c";
@@ -77,7 +80,7 @@ function liner_reset(){
 
 function binary_reset(){
   binary_step.innerHTML = "찾기";
-  binary_return.innerHTML = "반환값 :";
+  binary_return.innerHTML = "반환값 : ";
   for(var i=1; i<=10; i++){
     table_loc(binary_table, 2, i).innerHTML = "";
     table_loc(binary_table, 2, i).style.color = "#676a6c";
